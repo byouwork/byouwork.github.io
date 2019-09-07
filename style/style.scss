@@ -1,0 +1,249 @@
+//color
+$color_main: #333333;
+$color_key: #EA6055;
+$color_border: #EEEEEE;
+
+//reset 
+body {
+  font-family: "Rubik", "Helvetica", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "游ゴシック", "Yu Gothic", YuGothic, "a-otf-midashi-go-mb31-pr6n", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  text-align: center;
+  color: $color_main;
+  background-color: $color_key;
+}
+a {
+  color: $color_main;
+}
+h1, div, p {
+  margin: 0;
+  padding: 0;
+}
+input, button, textarea, select {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+//index
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 70px auto 100px;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/logo.svg") no-repeat;
+    background-size: contain;
+    color: transparent;
+  }
+}
+.contents_wrapper {
+  background-color: #FFF;
+  border-radius: 40px;
+  position: relative;
+  z-index: 100;
+  width: 800px;
+  padding: 30px 100px 100px 100px;
+  margin: 110px auto 180px auto;
+  text-align: left;
+  box-shadow: 0px 0px 30px rgba(0,0,0,.2)
+}
+.contents_list {
+  border-bottom: solid 1px $color_border;
+  padding: 20px 0 18px 0;
+  &:first-child {
+    border-top: solid 1px $color_border;
+  }
+}
+.contents_list_title {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+  font-feature-settings: "palt";
+}
+.contents_list_text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+  font-feature-settings: "palt";
+}
+.contents_list_title {
+  width: 190px;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+}
+.contents_list_text {
+  width: 520px;
+}
+.sns_list_wrapper {
+  margin: 5px 0;
+  padding: 0;
+  font-size: 0;
+}
+.sns_list {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  list-style-type: none;
+  a {
+    display: block;
+    vertical-align: middle;
+    width: 26px;
+    height: 26px;
+    color: transparent;
+  }
+}
+.sns_list_tw {
+  a {
+    background: url("../images/sns_tw.svg") no-repeat;
+  }
+}
+.btn_blank {
+  a {
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    color: $color_main;
+    text-decoration: none;
+    }
+}
+.service_container {
+  font-size: 0;
+}
+.service_list_wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  width: 380px;
+  margin-bottom: 60px;
+  &:first-child {
+    margin-right: 38px;
+  }
+}
+.service_list {
+  width: 100%;
+  height: 200px;
+  border: solid 1px $color_border;
+  margin-bottom: 10px;
+  color: transparent;
+  text-align: center;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    width: 380px;
+  }
+}
+.service_list_text {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1280px) {
+  .contents_wrapper {
+    margin: 34px auto 180px auto;
+    padding: 30px 30px 60px 30px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .contents_wrapper {
+    box-sizing: border-box;
+    width: 92%;
+    margin: 20 px auto 140px auto;
+  } 
+  .contents_list {
+    padding: 16px 0 14px 0;
+  }
+  .contents_list_title, .contents_list_text {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .contents_list_title {
+    width: 29%;
+  }
+  .contents_list_text {
+    width: 69%;
+  }
+  .about_name {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+  .service_list_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left;
+    &:first-child {
+      margin-right: 0;
+    }
+  }   
+  .service_list {
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    a {
+      height: 100%;
+    }
+    img {
+      width: auto;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  .service_list {
+    margin-bottom: 15px;
+  }
+  .service_list_name {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .service_list_text {
+    line-height: 1.6;
+    font-size: 13px;
+    br {
+      display: none;
+    }
+  }
+  .btn_blank a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contents_list_title, .contents_list_text {
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .service_list {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    a {
+      height: 100%;
+    }
+    img {
+      width: auto;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  .service_list_text {
+    font-size: 12px;
+  }
+}
